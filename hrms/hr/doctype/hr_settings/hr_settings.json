@@ -28,6 +28,7 @@
   "restrict_backdated_leave_application",
   "prevent_self_leave_approval",
   "prevent_self_expense_approval",
+  "enable_multi_level_approvals",
   "role_allowed_to_create_backdated_leave_application",
   "column_break_29",
   "expense_approver_mandatory_in_expense_claim",
@@ -345,6 +346,12 @@
    "fieldname": "prevent_self_expense_approval",
    "fieldtype": "Check",
    "label": "Prevent self approval for expense claims even if user has permissions"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_multi_level_approvals",
+   "fieldtype": "Check",
+   "label": "Enable Multi-Level Approvals for Leave Applications"
   }
  ],
  "icon": "fa fa-cog",

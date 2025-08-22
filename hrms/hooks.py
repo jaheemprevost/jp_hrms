@@ -209,6 +209,9 @@ doc_events = {
 	},
 	"Project": {"validate": "hrms.controllers.employee_boarding_controller.update_employee_boarding_status"},
 	"Task": {"on_update": "hrms.controllers.employee_boarding_controller.update_task"},
+	"Leave Application": {
+		"before_submit": "hrms.hr.doctype.leave_application.modifications.validate_multi_approver_before_submit"
+	},
 }
 
 # Scheduled Tasks

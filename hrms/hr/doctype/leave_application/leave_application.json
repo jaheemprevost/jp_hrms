@@ -36,7 +36,9 @@
   "color",
   "column_break_17",
   "letter_head",
-  "amended_from"
+  "amended_from",
+  "approval_logs_section",
+  "approval_logs"
  ],
  "fields": [
   {
@@ -243,11 +245,24 @@
    "print_hide": 1,
    "read_only": 1
   },
+   {
+    "collapsible": 1,
+    "fieldname": "sb_other_details",
+    "fieldtype": "Section Break",
+    "label": "Other Details"
+   },
   {
    "collapsible": 1,
-   "fieldname": "sb_other_details",
+   "fieldname": "approval_logs_section",
    "fieldtype": "Section Break",
-   "label": "Other Details"
+   "label": "Approval Logs"
+  },
+  {
+   "fieldname": "approval_logs",
+   "fieldtype": "Table",
+   "label": "Approval Logs",
+   "options": "Leave Application Approval Log",
+   "read_only": 1
   }
  ],
  "icon": "fa fa-calendar",
